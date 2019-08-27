@@ -5,7 +5,7 @@ let reduceZeros items =
         | 0::tail -> [0]
         | _ -> items
 
-let onlyZerosOrNaturals x y =
+let bothAreZerosOrNot x y =
     match x, y with
         | 0, 0 -> true
         | 0, _ | _, 0 -> false        
