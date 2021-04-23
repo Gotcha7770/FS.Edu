@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FS.Edu", "FS.Edu\FS.Edu.fsproj", "{A5DD63E1-75A9-4AFE-B2E8-686B0B61862B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FS.Edu.Core", "FS.Edu.Core\FS.Edu.Core.fsproj", "{A5DD63E1-75A9-4AFE-B2E8-686B0B61862B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FS.Edu.Tests", "FS.Edu.Tests\FS.Edu.Tests.fsproj", "{3537BA5F-C8C9-47CD-843B-D019DFE8819E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A5DD63E1-75A9-4AFE-B2E8-686B0B61862B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5DD63E1-75A9-4AFE-B2E8-686B0B61862B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5DD63E1-75A9-4AFE-B2E8-686B0B61862B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3537BA5F-C8C9-47CD-843B-D019DFE8819E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3537BA5F-C8C9-47CD-843B-D019DFE8819E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3537BA5F-C8C9-47CD-843B-D019DFE8819E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3537BA5F-C8C9-47CD-843B-D019DFE8819E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
