@@ -2,18 +2,14 @@ module FS.Edu.StringProcessingTests
 
 open System
 open System.Linq
+open System.Text.RegularExpressions
 open NUnit.Framework
-open SeqExt
-
-
-//[<SetUp>]
-//let Setup () = ()
 
 [<Test>]
 let ``Fold test`` () = 
     let result =
         {1..5}
-        |> Seq.map (fun n -> "Test\r\n")
+        |> Seq.map (fun _ -> "Test\r\n")
         |> Seq.fold (fun agg cur -> agg + cur) String.Empty
     let expected = "Test\r\nTest\r\nTest\r\nTest\r\nTest\r\n"
     
@@ -25,5 +21,17 @@ let ``Split test`` () =
     let result = source.Split("\r\n", StringSplitOptions.RemoveEmptyEntries)
     let expected = Enumerable.Repeat("Test", 5)
     
-    //Assert.AreEqual(expected, result)
     CollectionAssert.AreEqual(expected, result)
+    
+[<Test>]
+let ``RegEx test`` () =
+    let source = "Branch { Id: 1, IsGone: True}"
+    let r1 = Regex("IsGone: True")
+    let m1 = r1.Match source
+    
+    Assert.IsTrue(m1.Success)
+    
+    let r2 = Regex("IsGone: False")
+    let m2 = r2.Match source
+    
+    Assert.IsFalse(m2.Success)
