@@ -45,7 +45,6 @@ module Main =
 
     open TruthTables
 
-    [<EntryPoint>]
     let main argv =
         printTruthTable (&&)
         printTruthTable (||)
