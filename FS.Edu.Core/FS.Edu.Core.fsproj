@@ -9,5 +9,6 @@
     <Compile Include="PlayingCards2.fs" />
     <Compile Include="Program.fs" />
     <Compile Include="SeqExt.fs" />
+    <Compile Include="ExecuteProcess.fs" />
   </ItemGroup>
 </Project>

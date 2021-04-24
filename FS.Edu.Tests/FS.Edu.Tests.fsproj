@@ -10,6 +10,7 @@
     <ItemGroup>
         <Compile Include="StringProcessingTests.fs" />
         <Compile Include="CollectionTests.fs" />
+        <Compile Include="ProcessExecutionTests.fs" />
     </ItemGroup>
 
     <ItemGroup>
