@@ -10,5 +10,9 @@
     <Compile Include="Program.fs" />
     <Compile Include="SeqExt.fs" />
     <Compile Include="ExecuteProcess.fs" />
+    <Compile Include="Traversable.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharpPlus" Version="1.3.3" />
   </ItemGroup>
 </Project>
