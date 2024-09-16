@@ -26,13 +26,13 @@ let private executeFromInfo (procInfo: ProcessStartInfo) =
       stdout = output
       stderr = error }
 
-let executeProcess name args =
+let executeProcess name (args: IEnumerable<string>) =
     let procInfo = ProcessStartInfo(name, args)
     procInfo.RedirectStandardOutput <- true
     procInfo.RedirectStandardError <- true
     executeFromInfo procInfo
 
-let executeProcessSilently name args =
+let executeProcessSilently name (args: IEnumerable<string>) =
     let procInfo = ProcessStartInfo(name, args)
     procInfo.UseShellExecute <- false
     procInfo.RedirectStandardOutput <- true
