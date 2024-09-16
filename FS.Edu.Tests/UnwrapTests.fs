@@ -14,7 +14,7 @@ let ``Unwrap it in procedural style`` =
     let option =
         match result with
         | Ok x -> x
-        | Error e -> Some -1
+        | _ -> Some -1
     let value =
         match option with
         | Some x -> x
@@ -23,19 +23,23 @@ let ``Unwrap it in procedural style`` =
     test <@ value = 42 @>
 
 [<Fact>]
-let ``Unwrap with ce`` =        
-    let unwrapResult asyncValue =  async {
-        match! asyncValue with
-        | Ok option -> return option
-        | _ -> return  Some -1
-    }
-
+let ``Unwrap Async<Option<a`>>`` =
     let unwrapOption asyncValue =  async {
         match! asyncValue with
         | Some value -> return value
         | None -> return  0
     }
     
+    let value =
+        Some 42
+        |> async.Return
+        |> unwrapOption
+        |> Async.RunSynchronously
+
+    test <@  value = 42 @>
+
+[<Fact>]
+let ``Unwrap with ce`` = 
     let ce = async {
         let! option = async {
             match! computation with
