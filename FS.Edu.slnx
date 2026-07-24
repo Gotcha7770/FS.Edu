@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FS.Edu.Core/FS.Edu.Core.fsproj" />
+  <Project Path="FS.Edu.Tests/FS.Edu.Tests.fsproj" />
+</Solution>
