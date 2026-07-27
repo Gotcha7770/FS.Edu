@@ -1,7 +1,6 @@
 ﻿module FS.Edu.Traversable
 
 open FSharpPlus
-open FSharpPlus.Data
 
 type ItemId = ItemId of int
 type BasketId = BasketId of int
