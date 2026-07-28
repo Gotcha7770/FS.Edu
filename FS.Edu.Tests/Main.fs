@@ -1,7 +1,8 @@
-﻿module FS.Edu.Tests
+﻿namespace FS.Edu.Tests
 
 open Expecto
 
-[<EntryPoint>]
-let main argv =
-    runTestsInAssemblyWithCLIArgs [] argv
+module Program =
+
+    [<EntryPoint>]
+    let main argv = runTestsInAssemblyWithCLIArgs [] argv

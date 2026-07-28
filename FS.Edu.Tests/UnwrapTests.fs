@@ -1,4 +1,4 @@
-﻿module UnwrapTests
+﻿module FS.Edu.Tests.UnwrapTests
 
 open Expecto
 open FsUnit

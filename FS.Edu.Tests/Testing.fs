@@ -1,4 +1,4 @@
-﻿module Testing
+﻿module FS.Edu.Tests.Testing
 
 open Expecto
 open FsUnit

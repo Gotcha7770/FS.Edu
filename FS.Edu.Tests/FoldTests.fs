@@ -1,7 +1,7 @@
-﻿module FoldTests
+﻿module FS.Edu.Tests.FoldTests
 
 open Expecto
-open Testing
+open FS.Edu.Tests.Testing
 
 let average(list: float list): float =
     match list with
